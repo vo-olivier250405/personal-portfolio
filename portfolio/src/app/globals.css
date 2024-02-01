@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: #181818;
+}
+
+  span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #fff;
+  }
