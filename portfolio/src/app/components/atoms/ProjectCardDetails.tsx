@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const ProjectCardDetails = (props: ProjectCardDetailsProps) => {
   return (
-    <div className=" justifiy-center items-center">
+    <div className="bg-gray-500 rounded-md w-fit p-8 justifiy-center items-center">
       <h1>{props.project.title}</h1>
       {props.project.techno.map((icon: IconDefinition) => {
         return (

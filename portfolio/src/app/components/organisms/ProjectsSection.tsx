@@ -37,7 +37,9 @@ export const ProjectSection = () => {
       </div>
       {selectedProject && (
         <Modal onClose={handleCloseModal}>
-          <ProjectCardDetails project={selectedProject} />
+          <div className="flex justify-center items-center mt-8">
+            <ProjectCardDetails project={selectedProject} />
+          </div>
         </Modal>
       )}
     </div>
