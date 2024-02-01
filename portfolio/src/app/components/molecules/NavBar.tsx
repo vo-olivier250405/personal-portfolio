@@ -6,7 +6,6 @@ import {
   faHome,
   faPhone,
   faUser,
-  faUserTie,
 } from "@fortawesome/free-solid-svg-icons";
 
 export const NavBar = (props: NavBarProps) => {
