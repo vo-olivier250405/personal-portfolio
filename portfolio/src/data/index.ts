@@ -1,20 +1,39 @@
 import { Project } from "@/types";
 import { pointsInner, pointsOuter } from "./utils";
-import { faJs, faNodeJs, faPython } from "@fortawesome/free-brands-svg-icons";
+import {
+  faJs,
+  faNodeJs,
+  faPython,
+  faReact,
+} from "@fortawesome/free-brands-svg-icons";
 
 export const projects: Project[] = [
   {
-    title: "Proet",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad officia provident quaerat modi quos commodi animi enim voluptate amet voluptatum, praesentium assumenda eveniet aperiam saepe voluptas quam? Labore, placeat debitis.",
+    title: "Financial Dashboard",
+    description: "Python app wich allows to compare 2 market curves.",
     picture: "/assets/logo.png",
-    techno: [faPython, faNodeJs, faJs],
+    techno: [faPython],
   },
   {
-    title: "LALAL",
-    description: "sqdq",
+    title: "Moissan Fighter Video Game",
+    description:
+      "Video game retro style. In this game you can choose characters and make them fight.",
     picture: "/assets/logo.png",
-    techno: [faPython, faNodeJs, faJs],
+    techno: [faPython],
+  },
+  {
+    title: "Gamify Tasks",
+    description:
+      "Web app to gamify tasks, with points system, level ranking and to do list.",
+    picture: "/assets/logo.png",
+    techno: [faNodeJs, faJs, faReact],
+  },
+  {
+    title: "Web Organization app",
+    description:
+      "Web app to organize school tasks, like downloading files, seeing schedules etc...",
+    picture: "/assets/logo.png",
+    techno: [faPython],
   },
 ];
 
