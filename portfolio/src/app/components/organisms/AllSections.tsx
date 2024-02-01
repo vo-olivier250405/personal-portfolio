@@ -1,9 +1,8 @@
 import { RefObject, useRef } from "react";
 import { NavBar } from "../molecules";
-import { SceneSphere } from ".";
-import { ContactMeSection } from "./ContactMeSection";
-import { AboutMeSection } from "./AboutMeSection";
-import { ProjectSection } from "./ProjectsSection";
+import { ContactMeSection } from ".";
+import { AboutMeSection } from ".";
+import { ProjectSection } from ".";
 
 export const AllSections = () => {
   const allScrollsTarget: { [key: string]: RefObject<HTMLElement> } = {

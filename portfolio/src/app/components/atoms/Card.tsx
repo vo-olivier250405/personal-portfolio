@@ -6,10 +6,10 @@ export const Card = (props: CardProps) => {
   return (
     <div
       onClick={props.onClick}
-      className="grid m-4 justify-center items-center"
+      className="grid m-4 justify-center items-center w-fit"
     >
       <div className="flex justify-center items-center">
-        <h1 className="text-4xl">{props.project.title}</h1>
+        <h1 className="text-2xl p-4 w-fit">{props.project.title}</h1>
         {props.project.techno.map((icon: IconDefinition) => {
           return (
             <FontAwesomeIcon
@@ -24,7 +24,7 @@ export const Card = (props: CardProps) => {
       <img
         src={props.project.picture}
         alt="description"
-        className="w-32 inset-0"
+        className="m-auto w-3/6"
       />
     </div>
   );

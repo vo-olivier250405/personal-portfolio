@@ -1,9 +1,7 @@
 import { Project } from "@/types";
 import { projects } from "@/data";
-import { ProjectCardDetails } from "../atoms/ProjectCardDetails";
 import { useState } from "react";
-import { Modal } from "../atoms/Modal";
-import { Card } from "../atoms";
+import { Card, Modal, ProjectCardDetails } from "../atoms";
 
 export const ProjectSection = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);

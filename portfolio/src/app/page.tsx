@@ -3,9 +3,11 @@ import { AllSections } from "./components/organisms";
 
 export default function Home() {
   return (
-    <main>
+    <main className="grid justify-center items-center">
       <AllSections />
-      <footer>© 2023 Vo Olivier. Tous droits réservés.</footer>
+      <footer className="m-auto">
+        © 2023 Vo Olivier. All rights reserved.
+      </footer>
     </main>
   );
 }

@@ -2,6 +2,7 @@ import { OrbitControls, RoundedBox } from "@react-three/drei";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { useRef } from "react";
 import { TextureLoader } from "three";
+import WordCloud from "../atoms/CloudWords";
 
 export const Cube = ({
   imageSrc,
@@ -61,23 +62,18 @@ export const AboutMeSection = () => {
         <span>ABOUT ME</span>
       </h1>
       <hr className="m-4" />
-
+      <h2 className="italic text-white">Hi, im Vo Olivier, Etna student !</h2>
       <div className="grid justify-center md:flex md:justify-center md:items-center">
-        <div className="m-4">
-          <p className="text-sm m-4 p-4 rounded-md opacity-50 md:text-2xl bg-red-400">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Praesentium, odio beatae, architecto asperiores possimus eius autem
-            voluptatum facere sint voluptate iure voluptatem facilis sed enim
-            illo corporis maxime perspiciatis temporibus?
-          </p>
+        <div className="m-4 md:block hidden">
+          <WordCloud />
         </div>
 
         <div className="hidden bg-red-400 w-100 rounded-md p-4 md:max-w-64 m-auto md:block">
           <h2 className="text-5xl text-white">
-            <span>Skills</span>
+            <span>My Skills</span>
           </h2>
           <p className="italic">(You can move the cube to see them)</p>
-          {/* <CubeScene /> */}
+          <CubeScene />
         </div>
 
         <div className=" md:hidden justify-center items-center grid">
