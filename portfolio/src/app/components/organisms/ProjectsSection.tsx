@@ -1,7 +1,21 @@
-import { Project, ProjectSectionProps } from "@/types";
+import { Modal } from "../atoms/Modal";
+import { useState } from "react";
+import { projects } from "@/data";
+import { ProjectCardDetails } from "../atoms/ProjectCardDetails";
+import { Project } from "@/types";
 
 export const ProjectSection = () => {
-  const project: Project[] = [];
+  const [modalStates, setModalStates] = useState<boolean[]>(
+    projects.map(() => false)
+  );
+  const allProjects = projects;
+
+  const handleModalToggle = (index: number) => {
+    const newModalStates = [...modalStates];
+    newModalStates[index] = !newModalStates[index];
+    setModalStates(newModalStates);
+  };
+
   return (
     <div>
       <h1 className="text-6xl md:p-4 md:m-4">
@@ -9,20 +23,24 @@ export const ProjectSection = () => {
       </h1>
       <hr className="m-4" />
       <div className="grid grid-cols-2 gap-4">
-        {project.map((project: Project, index: number) => {
+        {allProjects.map((project: Project, index: number) => {
           return (
             <div
+              onClick={() => handleModalToggle(index)}
               key={index}
               className="p-4 m-4 rounded-md opacity-60 bg-red-400 hover:bg-red-500 ease-in duration-75"
             >
-              <h1 className="text-sm md:text-5xl text-white">Titire</h1>
-              <hr className="m-4" />
-              <p className="text-sm md:text-2xl italic text-white">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Tempora dignissimos odit, ex blanditiis non inventore ea
-                voluptatum quam assumenda. Eius labore voluptatibus deleniti
-                harum ipsam repellendus odio eligendi similique! Ex.
-              </p>
+              <ProjectCardDetails project={project} />
+              {modalStates[index] && (
+                <Modal>
+                  <div>
+                    <button onClick={() => handleModalToggle(index)}>X</button>
+                    <div className="bg-red flex justify-center items-center">
+                      {"BONJOUR JE SUIS LA " + project.title}
+                    </div>
+                  </div>
+                </Modal>
+              )}
             </div>
           );
         })}

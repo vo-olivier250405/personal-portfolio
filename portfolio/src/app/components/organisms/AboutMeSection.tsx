@@ -1,4 +1,3 @@
-import { User } from "@/types";
 import { OrbitControls, RoundedBox } from "@react-three/drei";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { useRef } from "react";
@@ -78,7 +77,7 @@ export const AboutMeSection = () => {
             <span>Skills</span>
           </h2>
           <p className="italic">(You can move the cube to see them)</p>
-          <CubeScene />
+          {/* <CubeScene /> */}
         </div>
 
         <div className=" md:hidden justify-center items-center grid">

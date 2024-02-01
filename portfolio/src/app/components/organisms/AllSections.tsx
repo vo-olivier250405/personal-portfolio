@@ -19,7 +19,7 @@ export const AllSections = () => {
         className="w-screen h-screen"
         ref={allScrollsTarget["homeTargetScroll"]}
       >
-        <SceneSphere />
+        {/* <SceneSphere /> */}
         <NavBar allScrollTargets={allScrollsTarget} />
       </section>
 
