@@ -24,7 +24,7 @@ export const Card = (props: CardProps) => {
       <img
         src={props.project.picture}
         alt="description"
-        className="m-auto w-3/6"
+        className="m-auto w-3/6 rounded-md border-2 shadow-lg shadow-red-600 hover:shadow-red-400"
       />
     </div>
   );

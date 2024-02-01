@@ -3,6 +3,7 @@ import { NavBar } from "../molecules";
 import { ContactMeSection } from ".";
 import { AboutMeSection } from ".";
 import { ProjectSection } from ".";
+import { SceneSphere } from ".";
 
 export const AllSections = () => {
   const allScrollsTarget: { [key: string]: RefObject<HTMLElement> } = {
@@ -18,7 +19,7 @@ export const AllSections = () => {
         className="w-screen h-screen"
         ref={allScrollsTarget["homeTargetScroll"]}
       >
-        {/* <SceneSphere /> */}
+        <SceneSphere />
         <NavBar allScrollTargets={allScrollsTarget} />
       </section>
 
