@@ -4,13 +4,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const ProjectCardDetails = (props: ProjectCardDetailsProps) => {
   return (
-    <div className="bg-gray-700 shadow-2xl shadow-white rounded-md w-fit p-8 m-4 justifiy-center items-center">
+    <div
+      key={props.key}
+      className="bg-gray-700 shadow-2xl shadow-white rounded-md w-fit p-8 m-4 justifiy-center items-center"
+    >
       <h1 className="text-white">{props.project.title}</h1>
       <hr className="m-4" />
       <div className="flex">
         {props.project.techno.map((icon: IconDefinition) => {
           return (
             <FontAwesomeIcon
+              key={props.key}
               icon={icon}
               color="white"
               size="3x"

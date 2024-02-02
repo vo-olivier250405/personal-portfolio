@@ -11,12 +11,14 @@ import { faDatabase, faServer } from "@fortawesome/free-solid-svg-icons";
 
 export const projects: Project[] = [
   {
+    id: 1,
     title: "Financial Dashboard",
     description: "Python app wich allows to compare 2 market curves.",
     picture: "/assets/pythonFinance.png",
     techno: [faPython, faGithub],
   },
   {
+    id: 2,
     title: "Moissan Fighter Video Game",
     description:
       "Video game retro style. In this game you can choose characters and make them fight.",
@@ -24,6 +26,7 @@ export const projects: Project[] = [
     techno: [faPython, faGithub],
   },
   {
+    id: 3,
     title: "Gamify Tasks",
     description:
       "Web app to gamify tasks, with points system, level ranking and to do list. Using mariadb database, Prisma ORM, NodeJS and NextJS for the front",
@@ -31,6 +34,7 @@ export const projects: Project[] = [
     techno: [faNodeJs, faJs, faReact, faDatabase, faServer, faGithub],
   },
   {
+    id: 4,
     title: "Web Organization app",
     description:
       "Web app to organize school tasks, like downloading files, seeing schedules etc... Using Python, Selenium",

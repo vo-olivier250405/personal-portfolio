@@ -2,6 +2,7 @@ import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import { RefObject } from "react";
 
 export type Project = {
+  id: number;
   title: string;
   description: string | null;
   picture: string;
@@ -11,6 +12,7 @@ export type Project = {
 export type CardProps = {
   project: Project;
   onClick: () => void;
+  key: number;
 };
 
 export type AllProjectCardProps = {
@@ -31,4 +33,4 @@ export type ProjectSectionProps = {
   project: Project[];
 };
 
-export type ProjectCardDetailsProps = { project: Project };
+export type ProjectCardDetailsProps = { project: Project; key: number };

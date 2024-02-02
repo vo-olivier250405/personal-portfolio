@@ -16,7 +16,7 @@ export const SceneSphere = () => {
         <SphereGroup />
       </Canvas>
       <h1 className="p-4 bg-transparent rounded-md absolute top-[50%] left-[55%] -translate-x-[50%] -translate-y-[50%] text-neutral-200 font-medium text-5xl pointer-event md:text-9xl">
-        <span>Hi, I'm</span> VO Olivier !
+        <span>Hi, I&apos;m</span> VO Olivier !
       </h1>
     </div>
   );
