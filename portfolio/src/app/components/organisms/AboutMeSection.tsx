@@ -63,8 +63,8 @@ export const AboutMeSection = () => {
       </h1>
       <hr className="m-4" />
       <h2 className="italic text-white m-auto">
-        Hi, I&apos;m Vo Olivier, and II&apos;m currently in my first year of project
-        management at ETNA! II&apos;m looking for a work-study position, and here are
+        Hi, I&apos;m Vo Olivier, and I&apos;m currently in my first year of project
+        management at ETNA! I&apos;m looking for a work-study position, and here are
         my key words and my technical skills!
       </h2>
       <div className="grid justify-center md:flex md:justify-center md:items-center">
