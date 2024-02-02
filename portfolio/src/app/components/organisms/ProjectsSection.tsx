@@ -31,7 +31,7 @@ export const ProjectSection = () => {
             key={index}
             className="p-4 m-4 rounded-md opacity-60 bg-red-400 hover:bg-red-500 ease-in duration-75"
           >
-            <Card project={project} onClick={() => {}} key={index} />
+            <Card project={project} onClick={() => {}} key={project.id} />
           </div>
         ))}
       </div>

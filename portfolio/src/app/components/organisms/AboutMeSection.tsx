@@ -62,7 +62,11 @@ export const AboutMeSection = () => {
         <span>ABOUT ME</span>
       </h1>
       <hr className="m-4" />
-      <h2 className="italic text-white">Hi, im Vo Olivier, Etna student !</h2>
+      <h2 className="italic text-white m-auto">
+        Hi, I&apos;m Vo Olivier, and I'm currently in my first year of project
+        management at ETNA! I'm looking for a work-study position, and here are
+        my key words and my technical skills!
+      </h2>
       <div className="grid justify-center md:flex md:justify-center md:items-center">
         <div className="m-4 md:block hidden">
           <WordCloud />

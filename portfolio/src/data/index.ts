@@ -21,7 +21,7 @@ export const projects: Project[] = [
     id: 2,
     title: "Moissan Fighter Video Game",
     description:
-      "Video game retro style. In this game you can choose characters and make them fight.",
+      "Retro-style fighting game project, developed in python as a group.",
     picture: "/assets/mfZ.png",
     techno: [faPython, faGithub],
   },
