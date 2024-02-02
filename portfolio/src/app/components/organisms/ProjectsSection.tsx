@@ -24,12 +24,12 @@ export const ProjectSection = () => {
         <span>PROJECTS</span>
       </h1>
       <hr className="m-4" />
-      <div className="grid grid-cols-2 gap-4">
+      <div className="md:grid md:grid-cols-2 md:gap-4">
         {allProjects.map((project: Project, index: number) => (
           <div
             onClick={() => handleProjectClick(project, index)}
             key={index}
-            className="p-4 m-4 rounded-md opacity-60 bg-red-400 hover:bg-red-500 ease-in duration-75"
+            className="h-52 md:h-96 p-4 m-4 rounded-md opacity-60 bg-red-400 hover:bg-red-500 ease-in duration-75"
           >
             <Card project={project} onClick={() => {}} key={project.id} />
           </div>
