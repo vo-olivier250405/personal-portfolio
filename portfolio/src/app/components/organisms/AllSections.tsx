@@ -24,21 +24,21 @@ export const AllSections = () => {
       </section>
 
       <section
-        className="w-screen h-screen p-4"
+        className="w-screen h-screen"
         ref={allScrollsTarget["aboutMeTargetScroll"]}
       >
         <AboutMeSection />
       </section>
 
       <section
-        className="w-screen h-screen p-4"
+        className="w-screen h-screen"
         ref={allScrollsTarget["projectsTargetScroll"]}
       >
         <ProjectSection />
       </section>
 
       <section
-        className="w-screen h-screen p-4"
+        className="w-screen h-screen"
         ref={allScrollsTarget["contactMeTargetScroll"]}
       >
         <ContactMeSection />
